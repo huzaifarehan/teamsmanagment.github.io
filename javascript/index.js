@@ -73,7 +73,8 @@ function createTeam() {
     }
     allTeamsObj.push(teams);
     allTeams = localStorage.setItem("allTeams", JSON.stringify(allTeamsObj));
-    document.getElementById('teamCreationForm').reset();
+    location.href = "ownerview.html";
+    // document.getElementById('teamCreationForm').reset();
     // e.preventDefault();
 }
 
