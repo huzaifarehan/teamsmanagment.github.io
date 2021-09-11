@@ -1,0 +1,169 @@
+/* for login form */
+
+#login{
+    /* margin: 100px;
+    width: 100%;
+    height: 100vh; */
+    
+}
+#signInForm{
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* for all buttons */
+.btn{
+    border-radius: 0%;
+    margin: 0px 20px;
+}
+.btn a{
+  color: #fff;
+  text-decoration: none;
+}
+/* #up {
+  margin: 0px 10px;
+} */
+#signInForm {
+  width: 500px;
+}
+#signUpForm {
+  width: 500px;
+}
+
+/* for all header heading and horizontal line of all pages */
+h1 {
+  /* justify-content: flex-end;
+    display: flex; */
+  font-weight: 700;
+}
+
+/* for all input feilds */
+
+.bottomLine{
+  border: none;
+  border-radius: none;
+  border-bottom: 1px solid #ced4da ;
+}
+
+/*  for team page */
+
+.ownTeam {
+display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  border-color: rgb(116, 109, 109);
+}
+.card p {
+  margin: 6px;
+}
+
+/* team page add button */
+#createTeam {
+  margin: auto;
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#createTeam img {
+  width: 40px;
+}
+
+/* popup */
+
+.popUp {
+  display: flex;
+  justify-content: center;
+}
+#popupClearButton {
+  border-color: red;
+  background-color: red;
+}
+#popupBody{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#category{
+  border-radius: 0%;
+  border: 1px solid black;
+}
+
+/* for member view page */
+
+#date{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* for owner view page */
+
+#ownerNav li{
+color: black;
+border-bottom: 2px solid #fff;
+font-size: 1.1rem;
+font-weight: 500;
+cursor: pointer;
+}
+
+/* #ownerNav li:hover{
+  border-color: orangered;
+} */
+.ownerNav2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#dropdownMenuSelect1{
+  border-radius: 0%;
+  font-weight: 500;
+  width: 15rem;
+  color: black;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+#remainderContent{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.memberContent{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+.ownerViewBtn{
+  width: 120px;
+}
+#clearTeam{
+  border-color: #fff;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 1px 1px 3px  rgb(134, 133, 133);
+}
+#deleteTeam{
+  border-color: red;
+  background-color: red;
+}
+
+.addMemberBlock{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.addMember{
+  margin: 0%;
+  padding: 1rem;
+  width: 17rem;
+  height: 40px;
+  border: 1px solid rgb(134, 133, 133);
+  border-radius: 25px;
+}

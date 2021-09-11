@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Owner View</title>
+</head>
+
+<body>
+  <div id="login" class="container">
+    <div>
+      <div>
+        <h1 class="my-3 mx-lg-4">Team / Owner View</h1>
+        <hr>
+      </div>
+      <div>
+        <ul id="ownerNav" class="nav justify-content">
+          <li onclick="showReport()" id="reportBtn" class="nav-item nav-link mx-3">Report
+          </li>
+          <li onclick="showSettings()" id="settingsBtn" class="nav-item nav-link mx-3">Settings
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border p-2">
+      <div id="report" class="container">
+        <div class="ownerNav2 my-3">
+          <div class="my-1">
+            <select class="form-select form-select-sm" id="dropdownMenuSelect1" aria-label=".form-select-sm example">
+              <option selected>All Members</option>
+              <option value="1">Haris</option>
+              <option value="2">Arshad</option>
+              <option value="3">Faizan</option>
+            </select>
+          </div>
+          <div class="my-1 mx-4">
+            <input type="date" name="" id="">
+          </div>
+        </div>
+        <div class="my-4">
+          <div>
+            <h5 class="w-auto legend">haris date</h5>
+          </div>
+          <div class="container mx-5 my-3">
+            <div class="my-2">
+              <p class="my-0">Q. What did you do today?</p>
+              <p class="my-0">A. What did you do today?</p>
+            </div>
+            <div class="my-2">
+              <p class="my-0">Q. What did you do today?</p>
+              <p class="my-0">A. What did you do today?</p>
+            </div>
+            <div class="my-2">
+              <p class="my-0">Q. What did you do today?</p>
+              <p class="my-0">A. What did you do today?</p>
+            </div>
+          </div>
+          <div class="my-4">
+            <div>
+              <h5 class="w-auto legend">haris date</h5>
+            </div>
+            <div class="container mx-5 my-3">
+              <div class="my-2">
+                <p class="my-0">Q. What did you do today?</p>
+                <p class="my-0">A. What did you do today?</p>
+              </div>
+              <div class="my-2">
+                <p class="my-0">Q. What did you do today?</p>
+                <p class="my-0">A. What did you do today?</p>
+              </div>
+              <div class="my-2">
+                <p class="my-0">Q. What did you do today?</p>
+                <p class="my-0">A. What did you do today?</p>
+              </div>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+      <div id="settings" class="container">
+        <div>
+          <div class="settingsContent my-4">
+            <h5 class="w-auto legend">Questions:</h5>
+          </div>
+          <div class="container">
+            <div class="my-3">
+              <input type="text" class="bottomLine form-control" id="formGroupExampleInput" placeholder="Question 1 ?">
+            </div>
+            <div class="my-3">
+              <input type="text" class="bottomLine form-control" id="formGroupExampleInput" placeholder="Question 2 ?">
+            </div>
+            <div class="my-3">
+              <input type="text" class="bottomLine form-control" id="formGroupExampleInput" placeholder="Question 3 ?">
+            </div>
+          </div>
+        </div>
+        <div class="settingsContent my-4">
+          <div>
+            <h5 class="w-auto legend">Remainder:</h5>
+          </div>
+          <div id="remainderContent">
+            <div><input type="datetime" name="time" id="time"></div>
+            <div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Exclude Weekends </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="settingsContent my-4">
+          <div>
+            <h5 class="w-auto legend">Members:</h5>
+          </div>
+          <div class="addMemberBlock mx-4 my-4" id="addMem">
+            
+            
+          </div>
+          <div class="memberContent">
+            <div class="memberContent1">
+              <div>
+                <input type="text" class="bottomLine my-5 form-control" id="memberContentInput"
+                  placeholder="Add Member">
+              </div>
+              <div class="my-5">
+                <button type="button" id="saveChanges" class="btn mb-3 btn-primary">Save Changes</button>
+                <button type="button" id="clearTeam" class="btn mb-3 btn-primary">Clear</button>
+              </div>
+            </div>
+            <div>
+              <div class="my-5">
+                <button type="button" class="ownerViewBtn btn btn-primary" onclick="addMember()">Add</button>
+              </div>
+              <div class="my-5">
+                <button type="button" id="deleteTeam" class="ownerViewBtn mb-3 btn btn-primary">Delete Team</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="./javascript/index.js"></script>
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+    <!-- <script src="./javascript/index.js"></script> -->
+
+</body>
+
+</html>
