@@ -35,5 +35,5 @@ function signUpFormFunc(e) {
     allUsers = localStorage.setItem("allUsers", JSON.stringify(allUsersObj));
     // document.getElementById("signUpForm").reset();
     e.preventDefault();
-    location.href = "//index.html"
+    location.href = "index.html"
 }
